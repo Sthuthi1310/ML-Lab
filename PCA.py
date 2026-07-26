@@ -11,7 +11,7 @@ from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 
 # Load dataset from URL
-url = "http://10.24.30.48/fruit.csv"
+url = "http://10.24.30.48/dataset/fruit.csv"
 df = pd.read_csv(url)
 
 # Display first 5 rows

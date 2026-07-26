@@ -17,7 +17,6 @@ test_sizes = [0.1, 0.3]
 
 # Distance metrics
 metrics = ['euclidean', 'manhattan']
-
 for name, url in datasets.items():
 
     print("\n" + "=" * 60)
