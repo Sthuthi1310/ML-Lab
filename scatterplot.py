@@ -1,12 +1,9 @@
 import matplotlib.pyplot as plt
-
-x = [1, 2, 3, 4, 5]
-y = [2, 4, 5, 4, 6]
-
-plt.scatter(x, y)
-
+import numpy as np
+x=np.linspace(0,10,100)
+y=np.sin(x)+np.random.normal(0,0.1,100)
+plt.scatter(x,y)
 plt.title("Scatter Plot")
 plt.xlabel("X")
 plt.ylabel("Y")
-
 plt.show()
