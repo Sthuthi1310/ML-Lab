@@ -4,14 +4,11 @@ Created on Mon Jun  8 15:12:29 2026
 
 @author: Sthuthi Sheela
 """
-
 import pandas as pd
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 url="http://10.24.30.48/dataset/IRIS.csv"
 data=pd.read_csv(url)
-print(data.shape)
-print(data.columns)
 X=data.iloc[:,:-1]
 Kmeans=KMeans(n_clusters=3)
 Kmeans.fit(X)
