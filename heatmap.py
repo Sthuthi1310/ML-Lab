@@ -1,13 +1,7 @@
 import matplotlib.pyplot as plt
+import numpy as np
 import seaborn as sns
-
-data = [
-    [10, 22, 33],
-    [4, 50, 16],
-    [27, 8, 19]
-]
-
-sns.heatmap(data, annot=True)
-
-plt.title("Heat Map")
+data=np.random.rand(10,5)
+sns.heatmap(data,annot=True)
+plt.colorbar()
 plt.show()
